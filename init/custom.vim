@@ -23,6 +23,7 @@ set showtabline=2
 " Indentation
 autocmd FileType javascript,javascriptreact,typescript,typescriptreact,php setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab smarttab
 autocmd BufNewFile,BufRead *.md set filetype=vimwiki
+autocmd BufNewFile,BufRead *.plist set filetype=xml
 
 " Helper function to set Indentation
 " Usage:
