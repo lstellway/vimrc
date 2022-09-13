@@ -39,6 +39,9 @@ command! -nargs=* Indentation call SetIndentation(<q-args>)
 nnoremap <leader>i :vsplit \| :call CocAction('jumpDefinition')<CR>
 nnoremap <Esc>i :split \| :call CocAction('jumpDefinition')<CR>
 
+" Reload VIM configuration
+nnoremap <leader>r :source $MYVIMRC<CR>
+
 " Map tab to switch tabs
 nmap <Tab> :tabnext<CR>
 map <S-Tab> :tabprevious<CR>
