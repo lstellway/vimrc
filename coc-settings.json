@@ -1,0 +1,49 @@
+{
+  // Coc appearance
+  "languageserver": {
+    "sorbet": {
+      "command": "srb",
+      "args": ["tc", "--lsp", "--enable-all-experimental-lsp-features"],
+      "filetypes": ["ruby"],
+      "rootPatterns": ["sorbet/config"],
+      "initializationOptions": {},
+      "settings": {}
+    }
+  },
+  // @see https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim
+  "coc.preferences.formatOnType": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "php",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  // ESLint
+  "eslint.autoFixOnSave": true,
+  // TypeScript
+  "tsserver.enable": true,
+  "tsserver.formatOnType": true,
+  // Prettier
+  "prettier.tabWidth": 2,
+  "prettier.enable": true,
+  "prettier.useTabs": false,
+  // Intelephense
+  "intelephense.licenceKey": "00UWZI2TTHOKWO5",
+  // TailwindCSS
+  "tailwindCSS.cssLanguages": [
+  	"css",
+  	"less",
+  	"postcss",
+  	"sass",
+  	"scss",
+  	"stylus",
+  	"vue"
+  ],
+  "tailwindCSS.jsLanguages": [
+  	"javascript",
+  	"javascriptreact",
+  	"reason",
+  	"typescriptreact"
+  ]
+}
