@@ -5,7 +5,8 @@
 "   3: Get the folder of the resolved absolute file
 let s:path = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 
-" Plugin initialization
+" Vim Plug initialization
+" @see https://github.com/junegunn/vim-plug
 let data_dir = has('nvim') ? stdpath('data') . '/site' : s:path
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -17,7 +18,6 @@ call plug#begin()
   Plug 'andymass/vim-matchup'
   Plug 'junegunn/fzf'
   Plug 'junegunn/fzf.vim'
-  Plug 'preservim/nerdtree'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-commentary'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -42,7 +42,8 @@ call plug#begin()
   Plug 'vimwiki/vimwiki'
 call plug#end()
 
-" Source all files in the `init` directory
+" Source all configuration files in the `init` directory
+" Breaking config into multiple files makes things easier to manage.
 for FILE in split(glob(data_dir . '/init/*.vim'), '\n')
   exe 'source' FILE
 endfor
