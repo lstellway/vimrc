@@ -6,12 +6,13 @@ else
   let darkmode=0
 endif
 
-" Solarized Theme
 syntax enable
-if darkmode == 0 " if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
-colorscheme solarized
+" if darkmode == 0 " if has('gui_running')
+"     set background=light
+" else
+"     set background=dark
+" endif
+" colorscheme solarized
+" colorscheme nordfox
+colorscheme dim
 
