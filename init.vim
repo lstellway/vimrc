@@ -1,3 +1,8 @@
+" Tell vim to use 256 colors
+if !has('nvim')
+  set t_Co=256
+endif
+
 " If you're using a symlink to your script, but your resources are in
 " the same directory as the actual script, you'll need to do this:
 "   1: Get the absolute path of the script
