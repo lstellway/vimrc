@@ -15,6 +15,7 @@ endif
 
 " Plugins
 call plug#begin()
+  Plug 'EdenEast/nightfox.nvim'
   Plug 'andymass/vim-matchup'
   Plug 'junegunn/fzf'
   Plug 'junegunn/fzf.vim'
