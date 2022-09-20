@@ -7,12 +7,11 @@ else
 endif
 
 syntax enable
-" if darkmode == 0 " if has('gui_running')
-"     set background=light
-" else
-"     set background=dark
-" endif
-" colorscheme solarized
-" colorscheme nordfox
-colorscheme dim
+if darkmode == 0
+  set background=light
+  colorscheme dawnfox
+else
+  set background=dark
+  colorscheme nightfox
+endif
 
