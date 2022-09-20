@@ -31,6 +31,7 @@
   // Intelephense
   "intelephense.licenceKey": "00UWZI2TTHOKWO5",
   // TailwindCSS
+  "tailwindCSS.headwind.runOnSave": false,
   "tailwindCSS.cssLanguages": [
   	"css",
   	"less",
