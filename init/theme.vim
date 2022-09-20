@@ -6,12 +6,20 @@ else
   let darkmode=0
 endif
 
+if has('nvim')
+lua << EOF
+require('nightfox').init({
+  dim_inactive = true,
+})
+EOF
+endif
+
 syntax enable
 if darkmode == 0
   set background=light
   colorscheme dawnfox
 else
   set background=dark
-  colorscheme nightfox
+  colorscheme carbonfox
 endif
 
