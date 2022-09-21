@@ -6,9 +6,9 @@ This repository houses my `~/.vimrc` configuration for the [VIM text editor](htt
 
 Remove *(or backup)* any pre-existing configuration:
 
-*Notes:*
-*Some of the configuration here relies on [LUA](https://www.lua.org/) and may only be compatible with versions of VIM compiled with LUA.*
-*(MacOS users can install a newer version VIM compiled with LUA support via homebrew: `brew install vim`)*
+*Notes:*<br />
+*Some of the configuration here relies on [LUA](https://www.lua.org/) and may only be compatible with versions of VIM compiled with LUA.*<br />
+*(MacOS users can install a newer version VIM compiled with LUA support via homebrew: `brew install vim`)*<br />
 *I am also transitioning to use of [Neovim (`nvim`)](https://neovim.io/).*
 
 ```shell
