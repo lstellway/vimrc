@@ -2,14 +2,14 @@
 
 This repository houses my `~/.vimrc` configuration for the [VIM text editor](https://www.vim.org/).
 
-## Installation
-
-Remove *(or backup)* any pre-existing configuration:
-
 *Notes:*<br />
 *Some of the configuration here relies on [LUA](https://www.lua.org/) and may only be compatible with versions of VIM compiled with LUA.*<br />
 *(MacOS users can install a newer version VIM compiled with LUA support via homebrew: `brew install vim`)*<br />
 *I am also transitioning to use of [Neovim (`nvim`)](https://neovim.io/).*
+
+## Installation
+
+Remove *(or backup)* any pre-existing configuration:
 
 ```shell
 rm -rf "${HOME}/.vim/"
