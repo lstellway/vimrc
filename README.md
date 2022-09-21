@@ -26,3 +26,18 @@ exe 'source' $HOME . '/.vim/init.vim'
 Open VIM and install plugins via the `PlugInstall` command.
 *(Refer to the [junegunn/vim-plug](https://github.com/junegunn/vim-plug) page for more information)*.
 
+## NVIM Setup
+
+NVIM stores configuration in different directories than a standard VIM installation. 
+To get NVIM to share configuraiton with VIM:
+
+```sh
+# Create a directories for the NVIM configuration
+mkdir -p "${HOME}/.local/share/nvim"
+mkdir -p "${HOME}/.config/nvim"
+
+# Symlink the VIM config and plugin directories
+ln -s "${HOME}/.vim" "${HOME}/.local/share/nvim/site"
+ln -s "${HOME}/.vim/plugged" "${HOME}/.local/share/nvim/plugged"
+ln -s "${HOME}/.vimrc" "${HOME}/.config/nvim/init.vim"
+```
