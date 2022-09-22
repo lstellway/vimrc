@@ -45,4 +45,5 @@ mkdir -p "${HOME}/.config/nvim"
 ln -s "${HOME}/.vim" "${HOME}/.local/share/nvim/site"
 ln -s "${HOME}/.vim/plugged" "${HOME}/.local/share/nvim/plugged"
 ln -s "${HOME}/.vimrc" "${HOME}/.config/nvim/init.vim"
+ln -s "${HOME}/.vim/coc-settings.json" "${HOME}/.config/nvim/coc-settings.json"
 ```
