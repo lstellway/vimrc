@@ -25,6 +25,9 @@ autocmd FileType javascript,javascriptreact,typescript,typescriptreact,php setlo
 autocmd BufNewFile,BufRead *.md set filetype=vimwiki
 autocmd BufNewFile,BufRead *.plist set filetype=xml
 
+" Allow backspace
+set backspace=indent,eol,start
+
 " Helper function to set Indentation
 " Usage:
 "   :Indentation [NUMBER]
@@ -59,4 +62,11 @@ set re=0
 
 " Keep cursor vertically centered
 :set scrolloff=999
+
+" Helper function to delete empty lines
+" @see https://stackoverflow.com/a/706078
+function! DeleteEmptyLines() abort
+  execute 'g/^\s*$/d'
+endfunction
+command! -nargs=0 RemoveEmptyLines call DeleteEmptyLines()
 
