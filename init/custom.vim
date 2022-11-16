@@ -1,5 +1,6 @@
-" Logan
+" Use absolute line numbers
 set number
+" Use relative line numbers
 " set relativenumber
 
 " tell vim where to put its backup files
