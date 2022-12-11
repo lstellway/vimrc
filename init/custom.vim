@@ -43,6 +43,9 @@ command! -nargs=* Indentation call SetIndentation(<q-args>)
 nnoremap <leader>i :vsplit \| :call CocAction('jumpDefinition')<CR>
 nnoremap <Esc>i :split \| :call CocAction('jumpDefinition')<CR>
 
+" Delete buffer
+nnoremap <C-X> :bdelete<CR>
+
 " Reload VIM configuration
 nnoremap <leader>r :source $MYVIMRC<CR>
 
