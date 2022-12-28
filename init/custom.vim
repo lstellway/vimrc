@@ -75,6 +75,7 @@ endfunction
 command! -nargs=0 RemoveEmptyLines call DeleteEmptyLines()
 
 " netrw
-let g:netrw_altv=1 " Open vertical to right
-let g:netrw_preview=1 " Open preview in vertical split
+" Open preview in vertical split
+let g:netrw_preview = 1
+let g:netrw_alto = 0
 
