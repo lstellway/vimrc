@@ -22,6 +22,7 @@ endif
 call plug#begin()
   Plug 'EdenEast/nightfox.nvim'
   Plug 'andymass/vim-matchup'
+  Plug 'github/copilot.vim'
   Plug 'junegunn/fzf'
   Plug 'junegunn/fzf.vim'
   Plug 'tpope/vim-fugitive'
