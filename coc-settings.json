@@ -10,12 +10,17 @@
       "settings": {}
     }
   },
+  // @see https://github.com/neoclide/coc-solargraph/issues/3#issuecomment-485142497
+  "solargraph.autoformat": true,
+  "solargraph.diagnostics": true,
+  "solargraph.formatting": true,
   // @see https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim
   "coc.preferences.formatOnType": true,
   "coc.preferences.formatOnSaveFiletypes": [
-    "php",
     "javascript",
     "javascriptreact",
+    "php",
+    "ruby",
     "typescript",
     "typescriptreact"
   ],
